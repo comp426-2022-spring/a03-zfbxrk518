@@ -3,12 +3,17 @@
 //import flips from './flips.js'
 //import guess from './guess-flip.js'
 const express = require('express')
+const minimist = require('minimist')
 const flip = require('./flip.js')
 const flips = require('./flips.js')
 const guess = require('./guess-flip.js')
 const app = express()
 
-const HTTP_PORT = 5000;
+var args = minimist(process.argv.slice(2))
+
+var port = args.port
+
+const HTTP_PORT = port||5000;
 
 // Start an app server
 const server = app.listen(HTTP_PORT, () => {
