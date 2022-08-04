@@ -1,7 +1,7 @@
 // Import the coinFlip function from your coin.mjs file
-import {coinFlips, countFlips} from './modules/coin.mjs' 
+const {coinFlips, countFlips} = require('./modules/coin.js')
 
-export default function flips(number) {
+module.exports = function flips(number) {
 
 	var array = coinFlips(number);
 	

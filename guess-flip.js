@@ -1,9 +1,9 @@
 // Import the coinFlip function from your coin.mjs file
 
-import {coinFlip, flipACoin} from './modules/coin.mjs' 
+const {coinFlip, flipACoin} = require('./modules/coin.js')
 
 
-export default function guess(call) {
+module.exports = function guess(call) {
 
 	var flip = coinFlip();
 	

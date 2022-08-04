@@ -1,7 +1,11 @@
-import express from 'express'
-import flip from './flip.js'
-import flips from './flips.js'
-import guess from './guess-flip.js'
+//import express from 'express'
+//import flip from './flip.js'
+//import flips from './flips.js'
+//import guess from './guess-flip.js'
+const express = require('express')
+const flip = require('./flip.js')
+const flips = require('./flips.js')
+const guess = require('./guess-flip.js')
 const app = express()
 
 const HTTP_PORT = 5000;
