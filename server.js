@@ -41,7 +41,7 @@ app.get('/app/flips/:number', (req, res) => {
 	
 });
 
-app.get('/app/flips/call/:callcall', (req, res) => {
+app.get('/app/flip/call/:callcall', (req, res) => {
 	
 	res.json(guess(req.params.callcall));
 	
