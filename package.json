@@ -1,0 +1,18 @@
+{
+  "name": "a03",
+  "version": "1.0.0",
+  "description": "This is a simple package that emulates coin flips in several different ways.",
+  "main": "server.js",
+  "scripts": {
+    "flip": "node flip.js",
+    "flips": "node flips.js",
+    "guess": "node guess-flip.js",
+    "test": "node server.js --port=5555"
+  },
+  "author": "yuyu",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "express": "^4.18.1",
+    "minimist": "^1.2.6"
+  }
+}
